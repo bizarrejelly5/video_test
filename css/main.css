@@ -1,0 +1,73 @@
+html{
+	border: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+body{
+	margin-top: 0px;
+ 	margin-right: 0px;
+ 	margin-bottom: 0px;
+	margin-left: 0px
+}
+
+/*Left side of page*/
+#serviceBar{
+	position: absolute;
+	top: 0;
+	height: 100vh;
+	background-color: white;
+	width: 20%;
+	opacity: 1;
+}
+
+.serviceOverlay{
+	padding-left: 10%;
+}
+
+#service0{
+	margin-top: 10%;
+}
+#service1{
+	margin-top: 15%;
+}
+#service2{
+	margin-top: 20%;
+}
+#service3{
+	margin-top: 25%;
+}
+#service4{
+	margin-top: 30%;
+}
+#service5{
+	margin-top: 35%;
+}
+
+/*The right side of the page*/
+#home{
+	display: block;
+}
+
+.servicePic{
+	width: 100vw;
+	height: 100vh;
+}
+
+#servicePic1{
+	display: none;
+}
+#servicePic2{
+	display: none;
+}
+#servicePic3{
+	display: none;
+}
+#servicePic4{
+	display: none;
+}
+#servicePic5{
+	display: none;
+}
