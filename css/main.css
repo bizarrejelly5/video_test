@@ -1,6 +1,6 @@
 @font-face{
-	font-family: 'proxima';
-	src: url('font/Proxima_Nova_ScOsf_Regular.otf');
+	font-family: 'ProximaReg';
+	src: url('../font/Proxima_Nova_Regular.otf');
 }
 
 html{
@@ -12,7 +12,7 @@ a{
 }
 
 body{
-	font-family: 'proxima';
+	font-family: 'ProximaReg';
 	margin-top: 0px;
  	margin-right: 0px;
  	margin-bottom: 0px;

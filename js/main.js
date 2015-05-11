@@ -2,7 +2,7 @@ function serviceClicked(x){
 	for(var i = 1; i < 6; i++){
 		if(i == x){
 			document.getElementById("servicePic" + i + "").style.display = "block";
-			document.getElementById("serviceBar").style.opacity = "0.5";
+			document.getElementById("serviceBar").style.opacity = "0.8";
 		}
 		else{
 			document.getElementById("servicePic" + i + "").style.display = "none";
