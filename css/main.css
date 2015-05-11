@@ -7,16 +7,76 @@ a{
 }
 
 body{
+	font-family: "proxima";
 	margin-top: 0px;
  	margin-right: 0px;
  	margin-bottom: 0px;
 	margin-left: 0px
 }
 
+/*General*/
+.whiteText{
+	color: white;
+}
+
+.centerText{
+	text-align: center;
+}
+
+/*Grids*/
+.grid {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+[class^='col-'] {
+	float: left;
+	padding: 0; 
+}
+
+.col-1of10{
+	width: 10%;
+}
+
+.col-2of10{
+	width: 20%;
+}
+
+.col-3of10{
+	width: 30%;
+}
+
+.col-4of10{
+	width: 40%;
+}
+
+.col-5of10{
+	width: 50%;
+}
+
+.col-6of10{
+	width: 60%;
+}
+.col-10of10{
+	width: 100%;
+}
+
+
+/*Header*/
+.header{
+	height: 10%;
+}
+
+.logo{
+	margin-left: 5%;
+	height: 100%;
+}
+
 /*Left side of page*/
 #serviceBar{
 	position: absolute;
-	top: 0;
+	top: 10%;
 	height: 100vh;
 	background-color: white;
 	width: 20%;
@@ -70,4 +130,30 @@ body{
 }
 #servicePic5{
 	display: none;
+}
+
+/*Footer*/
+.footer{
+	background-color: #0B2343;
+	height: 20%;
+}
+
+.yellowBox{
+	display: inline-block;
+	margin-right: 5%;
+	padding-left: 2%;
+	padding-right: 2%;
+	background-color: #ECCB5E;
+}
+
+.footerNav{
+	display: inline-block;
+	margin-right: 2%;
+	margin-left: 2%;
+
+}
+
+.textPadding5{
+	padding-left: 5%;
+	padding-top: 2%;
 }
