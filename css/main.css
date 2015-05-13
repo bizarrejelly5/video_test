@@ -217,6 +217,11 @@ body{
 	color: white;
 }
 
+.footerNav a:hover{
+	border-bottom-color: #ECCB5E !important;
+	border-bottom: 4px solid;
+}
+
 .textPadding5{
 	padding-left: 5%;
 	padding-top: 2%;
