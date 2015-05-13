@@ -11,8 +11,17 @@ a{
 	text-decoration: none;
 }
 
-body{
+h1, h2, p{
 	font-family: 'ProximaReg';
+	font-weight: normal;
+}
+
+h3{
+	font-family: 'ProximaReg';
+	font-weight: lighter;
+}
+
+body{	
 	margin-top: 0px;
  	margin-right: 0px;
  	margin-bottom: 0px;
@@ -22,11 +31,34 @@ body{
 /*General*/
 .whiteText{
 	color: white;
+	text-decoration: none;
 }
 
 .centerText{
 	text-align: center;
 }
+
+.blueBackground{
+	background-color: #0B2343;
+}
+
+.textOverlay{
+	position: absolute;
+	margin-left: 30%;
+	margin-top: 25%;
+	height: 25%;
+}
+
+.yellowBox{
+	display: inline-block;
+	margin-right: 5%;
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	background-color: #ECCB5E;
+}
+
 
 /*Grids*/
 .grid {
@@ -63,6 +95,11 @@ body{
 .col-6of10{
 	width: 60%;
 }
+
+.col-7of10{
+	width: 70%;
+}
+
 .col-10of10{
 	width: 100%;
 }
@@ -76,49 +113,77 @@ body{
 .logo{
 	margin-left: 5%;
 	height: 100%;
+	display: inline-block;
+	float: left;
+}
+
+.catchphrase{
+	display:inline-block;
+	float:center;
+}
+
+.callNumber{
+	display:inline-block;
+	float:right;
+	margin-right: 5%;
 }
 
 /*Left side of page*/
 #serviceBar{
-	position: absolute;
-	top: 10%;
+	margin: 0;
 	height: 100vh;
 	background-color: white;
-	width: 20%;
-	opacity: 1;
+	width: 25%;
+	opacity: 0.8;
 }
 
 .serviceOverlay{
-	padding-left: 10%;
+	padding-left: 15%;
 }
 
 #service0{
-	margin-top: 10%;
+	margin-left: 10%;
+	margin-top: 0;
+	padding-top: 10%;
 }
 #service1{
-	margin-top: 15%;
+	/*margin-top: 15%;*/
+	padding-top: 12.5%;
+	padding-bottom: 12.5%;
+
 }
 #service2{
-	margin-top: 20%;
+	/*margin-top: 20%;*/
+	padding-top: 12.5%;
+	padding-bottom: 12.5%;
 }
 #service3{
-	margin-top: 25%;
+	/*margin-top: 25%;*/
+	padding-top: 12.5%;
+	padding-bottom: 12.5%;
 }
 #service4{
-	margin-top: 30%;
+	/*margin-top: 30%;*/
+	padding-top: 12.5%;
+	padding-bottom: 12.5%;
 }
 #service5{
-	margin-top: 35%;
+	/*margin-top: 35%;*/
+	padding-top: 12.5%;
+	padding-bottom: 12.5%;
 }
 
 /*The right side of the page*/
 #home{
-	display: block;
+	position: absolute;
+	z-index: -5;
 }
 
 .servicePic{
 	width: 100vw;
 	height: 100vh;
+	position: absolute;
+	z-index: -5;
 }
 
 #servicePic1{
@@ -143,19 +208,13 @@ body{
 	height: 20%;
 }
 
-.yellowBox{
-	display: inline-block;
-	margin-right: 5%;
-	padding-left: 2%;
-	padding-right: 2%;
-	background-color: #ECCB5E;
-}
-
 .footerNav{
 	display: inline-block;
 	margin-right: 2%;
 	margin-left: 2%;
-
+}
+.footerNav a{
+	color: white;
 }
 
 .textPadding5{
