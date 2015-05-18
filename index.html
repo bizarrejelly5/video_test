@@ -1,8 +1,10 @@
+<!-- http://stackoverflow.com/questions/1867383/css-renders-differently-on-web-server-than-on-development-environment -->
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>Cortex - Home</title>
-		<link href="css/main.css" rel="stylesheet">
-		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	</head>
 	<body>
 
@@ -15,23 +17,23 @@
 		 	</div>
 		 <!-- blue nav -->
 		 </div>
-		 <div class="grid blueBackground whiteText" style="height:7%">
-		 	<h3 class="footerNav centerText" style="margin-left: 5%;"><a href="index.html">Home</a></h3>
- 			<h3 class="footerNav centerText"><a href="#">Services</a></h3>
- 			<h3 class="footerNav centerText"><a href="#">Our Experts</a></h3>
- 			<h3 class="footerNav centerText"><a href="#">Advisory Board</a></h3>
- 			<h3 class="footerNav centerText"><a href="#">News</a></h3>
+		 <div class="grid blueBackground" style="height:7%">
+		 	<h3 class="footerNav centerText" id="home" style="margin-left: 5%;"><a href="index.html">Home</a></h3>
+ 			<h3 class="footerNav centerText" id="services"><a href="javascript:;" =>Services</h3></a>
+ 			<h3 class="footerNav centerText"><a href="javascript:;">Our Experts</a></h3>
+ 			<h3 class="footerNav centerText"><a href="javascript:;">Advisory Board</a></h3>
+ 			<h3 class="footerNav centerText"><a href="javascript:;">News</a></h3>
  			<h3 class="footerNav centerText"><a href="about.html">About</a></h3>
- 			<h3 class="footerNav centerText"><a href="#">Contacts</a></h3>
+ 			<h3 class="footerNav centerText"><a href="javascript:;">Contacts</a></h3>
 		 </div>
 
 		 <!-- video -->
-	 	<div id="home"></div>		
+	 	<div id="video"></div>		
 	 	<!-- text over video -->
-	 	<div id="homeText" class="textOverlay">
+	 	<div id="homeText" class="textOverlay1">
 	 		<div class="grid">
 	 			<div class="col-3of10">
-		 			<img style="height:100%;" src="img/logo.png">
+		 			<img style="height:5%; width: 5%" src="img/logo.png">
 			 	</div>
 	 			<div class="col-7of10 whiteText">
 		 			<h1 class="catchphrase">Cortex</h1>
@@ -49,14 +51,70 @@
 	 	<div>
 	 		<div id="servicePic1"> 
 	 			<img class="servicePic" src="img/service_1.jpg">
-	 			<div class="textOverlay">
+	 			<!-- Main page of the first service -->
+	 			<div id="service1.1" class="textOverlay1">
 		 			<div class="col-4of10 whiteText">
 			 			<h1 class="catchphrase">Independant Psychological & Neuropsychological Assessment</h1>
 				 	</div>
 				 	<div class="col-7of10">
-	 					<h2 class="whiteText">Cortex Centre focuses on complex cases and high achievers in high stakes applications. The assessment provides diagnosis, causality determination, prognosis, and determination of the impact of impairment on the aspects of daily living in medicolegal context.</h2>
-	 					<h3 class="yellowBox centerText">Learn More</h3>
+				 		<div >
+	 						<h2 class="whiteText">Cortex Centre focuses on complex cases and high achievers in high stakes applications. The assessment provides diagnosis, causality determination, prognosis, and determination of the impact of impairment on the aspects of daily living in medicolegal context.</h2>
+	 						<a href="javascript:;"><h3 class="yellowBox centerText" onclick="learnMore(1.1,1.2)">Learn More</h3></a>
+	 					</div>
 		 			</div>
+	 			</div>
+	 			<!-- Learn More Clicked -->
+	 			<div id="service1.2" class="textOverlay2" style="display:none">
+			 			<h1 class="whiteText boldText">Independant Psychological & Neuropsychological Assessment</h1>
+						<h3 class="whiteText">Cortex Centre focuses on complex cases and high achievers in high stakes applications. The assessment provides diagnosis, causality determination, prognosis, and determination of the impact of impairment on the aspects of daily living in medicolegal context.</h2>
+						<div>
+							<!-- Collapsable Text -->
+ 							<a href="javascript:;"><h3 class="yellowBox" data-toggle="collapse" data-target="#service1A">Personal Injury</h3></a>
+							<div id="service1A" class="collapse whiteText">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+								<a href="javacsript:;"<p class="boldText">More Information</p></a>
+							</div>
+ 						</div>
+ 						<div>
+ 							<!-- Collapsable Text -->
+ 							<a href="javascript:;"><h3 class="yellowBox" data-toggle="collapse" data-target="#service1B">Employment Laws and Human Rights</h3></a>
+							<div id="service1B" class="collapse whiteText">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+								<a href="javacsript:;"<p class="boldText">More Information</p></a>
+							</div>
+ 						</div>
+ 						<div>
+ 							<!-- Collapsable Text -->
+ 							<a href="javascript:;"><h3 class="yellowBox" data-toggle="collapse" data-target="#service1C">Medical Malpractice</h3></a>
+							<div id="service1C" class="collapse whiteText">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+								<a href="javacsript:;"<p class="boldText">More Information</p></a>
+							</div>
+ 						</div>
+ 						<div>
+ 							<!-- Collapsable Text -->
+ 							<a href="javascript:;"><h3 class="yellowBox" data-toggle="collapse" data-target="#service1D">Family Law</h3></a>
+							<div id="service1D" class="collapse whiteText">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+								<a href="javacsript:;"<p class="boldText">More Information</p></a>
+							</div>
+ 						</div>
+ 						<div>
+ 							<!-- Collapsable Text -->
+ 							<a href="javascript:;"><h3 class="yellowBox" data-toggle="collapse" data-target="#service1E">Longterm Disability</h3></a>
+							<div id="service1E" class="collapse whiteText">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+								<a href="javacsript:;"<p class="boldText">More Information</p></a>
+							</div>
+ 						</div>
+ 						<div>
+ 							<!-- Collapsable Text -->
+ 							<a href="javascript:;"><h3 class="yellowBox" data-toggle="collapse" data-target="#service1F">Assessment of High Achievers</h3></a>
+							<div id="service1F" class="collapse whiteText">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+								<a href="javacsript:;"<p class="boldText">More Information</p></a>
+							</div>
+ 						</div>
 	 			</div>
 	 		</div>	
 
@@ -67,21 +125,31 @@
 	 	</div>
 	 	<!-- sidebar -->
 	 	<div id="serviceBar">
-		 	<h1 id="service0">Our Services</h2>
-		 	<div>
-		 		<h3 id="service1" class="serviceOverlay" onClick="serviceClicked(1)">Independant Psychological & Neuropsychological Assessment</h3>
+		 	<h1 id="service0">Our Services</h1>
+		 	<div class="serviceHover">
+		 		<a href="javascript:;" class="serviceHover" style="color:black">
+		 			<h3 id="service1" class="serviceOverlay" onClick="serviceClicked(1)">Independant Psychological & Neuropsychological Assessment</h3>
+		 		</a>
 		 	</div>
-		 	<div>
-		 		<h3 id="service2" class="serviceOverlay" onClick="serviceClicked(2)">Advanced Assessment of High Achievers</h3>
+		 	<div class="serviceHover">
+		 		<a href="javascript:;" class="serviceHover" style="color:black">
+		 			<h3 id="service2" class="serviceOverlay" onClick="serviceClicked(2)">Advanced Assessment of High Achievers</h3>
+		 		</a>
 		 	</div>
-		 	<div>
-		 		<h3 id="service3" class="serviceOverlay" onClick="serviceClicked(3)">Fitness for Duty & Practice Evaluation</h3>
+		 	<div class="serviceHover">
+		 		<a href="javascript:;" class="serviceHover" style="color:black">
+		 			<h3 id="service3" class="serviceOverlay" onClick="serviceClicked(3)">Fitness for Duty & Practice Evaluation</h3>
+		 		</a>
 		 	</div>
-		 	<div>
-		 		<h3 id="service4" class="serviceOverlay" onClick="serviceClicked(4)">Cognitive Screening Assessment</h3>
+		 	<div class="serviceHover">
+		 		<a href="javascript:;" class="serviceHover" style="color:black">
+		 			<h3 id="service4" class="serviceOverlay" onClick="serviceClicked(4)">Cognitive Screening Assessment</h3>
+		 		</a>
 		 	</div>
-		 	<div>
-		 		<h3 id="service5" class="serviceOverlay" onClick="serviceClicked(5)">Special Expert Services</h3>
+		 	<div class="serviceHover">
+		 		<a href="javascript:;" class="serviceHover" style="color:black">
+		 			<h3 id="service5" class="serviceOverlay" onClick="serviceClicked(5)">Special Expert Services</h3>
+		 		</a>
 		 	</div>
 		 	<!-- <h3 id="service1" class="serviceOverlay" onClick="serviceClicked(1)">Independant Psychological & Neuropsychological Assessment</h3>
 		 	<h3 id="service2" class="serviceOverlay" onClick="serviceClicked(2)">Advanced Assessment of High Achievers</h3>
@@ -90,7 +158,8 @@
 		 	<h3 id="service5" class="serviceOverlay" onClick="serviceClicked(5)">Special Expert Services</h3> -->
 	 	</div>
 
-	 	<div class="grid footer">
+	 	<!-- background color does not work with doctype -->
+	 	<!-- <div class="grid footer">
  	 		<div class="col-4of10 whiteText">
 		 		<h3>Cortex is affiliated with</h3>
 		 		<img src="img/ubc.png">
@@ -109,7 +178,13 @@
 		 			<h3 class="footerNav centerText">Contact</h3>
 		 		</div>
 			 </div>
-	 	</div>
+	 	</div> -->
 	</body>
+
+	<!-- Extra stuff -->
 	<script src='js/main.js'></script>
+	<script src='js/bootstrap.min.js'></script>
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	
 </html>
