@@ -51,8 +51,8 @@ function learnMore(x, y){
 	player = new YT.Player('video', {
 		height: "100%",
 		width: '100%',
-		videoId: 'eIzCAA98J9w',
-		playerVars: {'controls': 0, 'disablekb': 1, 'iv_load_policy': 3, 'loop': 1, 'showinfo': 0, "playlist": 'eIzCAA98J9w'},
+		videoId: 'N6Wh-2TgBqQ',
+		playerVars: {'controls': 0, 'disablekb': 1, 'iv_load_policy': 3, 'loop': 1, 'showinfo': 0, "playlist": '6OLz5qSGk8A, N6Wh-2TgBqQ'},
 		events: {
 			'onReady': onPlayerReady,
 		}
